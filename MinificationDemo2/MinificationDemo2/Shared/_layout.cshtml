@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="~/css/combined.min.css">
+  
+</head>
+
+<body>
+    <!--header begins here-->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="Home.html" class="logo">
+                <img src="~/images/company icons/logo 3.png" width="60" height="30"
+                     class="d-inline-block align-top" alt=""><span>CareerConnect</span>
+            </a>
+            <nav class="navbar">
+                <a href="@Url.Action("Homepage","Home")">Home</a>
+                <a href="@Url.Action("About","Aboutus")">About us</a>
+                <a href="@Url.Action("jobs","Jobs")">Jobs</a>
+                <a href="@Url.Action("Contactus","Contact")">Contact us</a>
+
+            </nav>
+
+            <partial name="_LoginPartial" />
+            @*<div class="buttons">
+
+               <a asp-area="Identity" asp-page="/Account/Register"  class="btn btn-sm" role="button" style="padding: 1.1rem;">Post job</a>
+            <a asp-area="Identity" asp-page="/Account/Register"  class="btn btn-sm" role="button" style="padding: 1.1rem;">Apply Now</a>
+            </div>*@
+
+
+        </section>
+        
+    </header>
+    <!--header ends here-->
+
+    @RenderBody()
+
+    <!-- footer section starts here -->
+    <footer class="footer">
+        <div class="container" style="padding-left: 100px; padding-right: 50px;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h3>Quick links</h3>
+                    <div class="links">
+                        <a href="@Url.Action("Homepage","Home")"><i class="fas fa-angle-right"></i>Home</a>
+                        <a href="@Url.Action("About","Aboutus")"><i class="fas fa-angle-right"></i>About us</a>
+                        <a href="@Url.Action("PostedJobs","PostedJobs")"><i class="fas fa-angle-right"></i>PostedJobs</a>
+                        <a href="@Url.Action("Contactus","Contact")"><i class="fas fa-angle-right"></i>Conatct us</a>
+                        <a href="@Url.Action("PostedJobs","PostedJobs")"><i class="fas fa-angle-right"></i>Filter search</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h3>Extra links</h3>
+                    <div class="links">
+
+                        @*<a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" se">Login</a>
+
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" >Register</a>*@
+
+                        <a href="@Url.Action("signup","Signup")"><i class="fas fa-angle-right"></i>Login</a>
+                        <a href="@Url.Action("signup","Signup")"><i class="fas fa-angle-right"></i>Sign up</a>
+                        <a href="@Url.Action("Postjob","Employer")"><i class="fas fa-angle-right"></i>Post job</a>
+                        <a href="@Url.Action("signup","Signup")"><i class="fas fa-angle-right"></i>Dashboard</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h3>Follow us</h3>
+                    <div class="links">
+                        <a href="https://www.facebook.com/MBabarAzamPakistan/"><i class="fab fa-facebook-f"></i>Facebook</a>
+                        <a href="https://twitter.com/babarazam258?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj-4t_soO2FAxXvQ_EDHWtRAboQFnoECAYQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449"><i class="fab fa-instagram"></i>Instagram</a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1xoS8oO2FAxUfZ_EDHSiiBIQQFnoECAcQAQ&url=https%3A%2F%2Fpk.linkedin.com%2F&usg=AOvVaw3MNXglGOBBrq9JRgM9eLfs&opi=89978449"><i class="fab fa-linkedin"></i>Linkedin</a>
+                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i>YouTube</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="credit">&copy; copyright 2024 by <span>CareerConnect</span> | all rights reserved</div>
+    </footer>
+    <!--Footer ends here-->
+
+
+    <script src="/js/site.min.js"></script>
+</body>
+
+</html>

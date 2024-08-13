@@ -1,0 +1,7 @@
+C:\Users\FCC\source\repos\PLINQ\PLINQ\bin\Debug\PLINQ.exe.config
+C:\Users\FCC\source\repos\PLINQ\PLINQ\bin\Debug\PLINQ.exe
+C:\Users\FCC\source\repos\PLINQ\PLINQ\bin\Debug\PLINQ.pdb
+C:\Users\FCC\source\repos\PLINQ\PLINQ\obj\Debug\PLINQ.csproj.AssemblyReference.cache
+C:\Users\FCC\source\repos\PLINQ\PLINQ\obj\Debug\PLINQ.csproj.CoreCompileInputs.cache
+C:\Users\FCC\source\repos\PLINQ\PLINQ\obj\Debug\PLINQ.exe
+C:\Users\FCC\source\repos\PLINQ\PLINQ\obj\Debug\PLINQ.pdb
