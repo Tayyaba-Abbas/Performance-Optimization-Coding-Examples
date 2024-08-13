@@ -1,0 +1,8 @@
+﻿@model Product
+
+<h2>@Model.Name</h2>
+<p>Price: @Model.Price</p>
+<form asp-action="CreateOrder" method="post">
+    <input type="hidden" name="productId" value="@Model.Id" />
+    <button type="submit">Order Now</button>
+</form>
